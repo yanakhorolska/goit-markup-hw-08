@@ -1,0 +1,15 @@
+﻿.logo {
+    font-family: Raleway, sans-serif;
+    color: var(--brand-color);
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    &__dark-span {
+        color: var(--dark-font-color);
+    }
+    &__light-span {
+        color: #ffffff;
+    }
+}
+
