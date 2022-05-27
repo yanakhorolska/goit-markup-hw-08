@@ -18,6 +18,9 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
     &--footer {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
         padding: 10px 29px;
         display: inline-flex;
         align-items: center;

@@ -14,10 +14,21 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container flex-center-between">
+        <div class="container">
             <nav class="navigation flex-center-between">
                 <a class="logo" lang="en" href="/">Web<span class="logo__dark-span">Studio</span>
                 </a>
+                <button type="button" class="burger-button">
+                    <svg class="burger-icons">
+                        
+                        <use class="icon-menu-burger" href="./images/symbol-defs.svg#icon-menu_burger"></use>
+                    </svg>
+                </button>
+                <button type="button" class="mobile-menu__close-button">
+                    <svg class="burger-icons">
+                        <use class="icon-close-burger" href="./images/symbol-defs.svg#icon-close_burger"></use>
+                    </svg>
+                </button>
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link navigation__link--active" href="index.html">Студия</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="portfolio.html">Портфолио</a></li>
@@ -51,7 +62,7 @@
         <section class="benefits section">
            <div class="container">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul class="benefits__list flex-center">
+            <ul class="benefits__list">
                 <li class="benefits__item">
                     <div class="benefits__card">
                         <svg class="benefits__icon">
@@ -124,7 +135,7 @@
         <section class="team section">
           <div class="container">
             <h2 class="second-title">Наша команда</h2>
-            <ul class="team__list flex-center-between">
+            <ul class="team__list">
                 <li class="team__item">
                     <img src="images/team1.jpg" alt="Игорь Демьяненко" width="270" class="team__img">
                     <h3 class="team__title">Игорь Демьяненко</h3>
@@ -321,13 +332,16 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-       <div class="container flex">
+       <div class="container">
 
-
+       
         <div class="footer-contacts">
-            <a class="logo" lang="en" href="/">
-                Web<span class="logo__light-span">Studio</span>
-            </a>
+            <div class="footer-contacts__logo-block">
+                <a class="logo" lang="en" href="/">
+                    Web<span class="logo__light-span">Studio</span>
+                </a>
+            </div>
+            
             <address class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</address>
             <a class="footer-contacts__link footer-contacts__link--top"
                 href="mailto:info@example.com">info@example.com</a>

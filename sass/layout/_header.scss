@@ -1,10 +1,11 @@
 ﻿.header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     &-portfolio {
         border-bottom: 1px solid #ECECEC;
     }
     &-connection {
+        display: none;
         &__link {
             display: flex;
             justify-content: center;
@@ -38,41 +39,42 @@
 
 
 
+
+
 // .header {
 //     padding-top: 25px;
 //     padding-bottom: 25px;
-// }
-
-// .header-portfolio {
-//     border-bottom: 1px solid #ECECEC;
-// }
-// .header-connection__link {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     color: var(--light-font-color);
-//     text-decoration: none;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     fill: var(--light-font-color);
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-// }
-// .header-connection__link + .header-connection__link {
-//     margin-left: 50px;
-// }
-// .header-connection__icon {
-//     display: inline-block;
-//     vertical-align: top;
-//     width: 16px;
-//     height: 16px;
-//     margin-right: 10px;
-// }
-// .header-connection__link:hover,
-// .header-connection__link:focus {
-//     color: var(--brand-color);
-//     fill: var(--brand-color);
+//     &-portfolio {
+//         border-bottom: 1px solid #ECECEC;
+//     }
+//     &-connection {
+//         &__link {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             color: var(--light-font-color);
+//             text-decoration: none;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 1.14;
+//             letter-spacing: 0.02em;
+//             fill: var(--light-font-color);
+//             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//             fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//             & + & {
+//                 margin-left: 50px;
+//             }
+//             &:hover, &:focus {
+//                 color: var(--brand-color);
+//                 fill: var(--brand-color);
+//             }
+//         }
+//         &__icon {
+//             display: inline-block;
+//             vertical-align: top;
+//             width: 16px;
+//             height: 16px;
+//             margin-right: 10px;
+//         }
+//     }
 // }
