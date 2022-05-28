@@ -13,5 +13,8 @@
     &__light-span {
         color: #ffffff;
     }
+    @media  screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 

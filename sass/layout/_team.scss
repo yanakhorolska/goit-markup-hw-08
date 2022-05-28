@@ -1,5 +1,13 @@
 ﻿.team {
     background-color: var(--bg-color);
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
     &__item {
         padding-bottom: 30px;
         background-color: #fff;
@@ -7,6 +15,17 @@
         border-radius: 0px 0px 4px 4px;
         &:not(:last-child) {
             margin-bottom: 30px;
+                @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+        }
+            @media screen and (min-width: 768px) {
+            width: calc(100% / 2 - 15px);
+            margin-bottom: 0;
+        }
+          @media screen and (min-width: 1200px) {
+            width: calc(100% / 4 - 30px);
+            margin-bottom: 0;
         }
     }
     &__img {

@@ -18,21 +18,27 @@
 
 
 .modal {
-    padding: 40px;
+    padding: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
     height: auto;
-    width: auto;
+    width: 90%;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: #fff;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media (min-width: 480px) {
-        min-width: 450px;
+        padding: 40px;
+        width: 450px;
+        min-height: 609px;
+    }
+    @media (min-width: 1600px) {
+        width: 528px;
+        min-height: 581px;
     }
     &__close-button {
         position: absolute;
@@ -150,35 +156,41 @@
     }
     &__checkbox-label {
         display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 20px;
+        justify-content: center;
+           @media (min-width: 1600px) {
+            align-items: center;
+            justify-content: center;
+    }
     }
     &__checkbox-icon {
-        margin-right: 7px;
-        width: 16px;
-        height: 16px;
+        margin-right: 6px;
+        width: 14px;
+        height: 14px;
         border: 2px solid var(--dark-font-color);
         border-radius: 2px;
         background-color: #fff;
     }
     &__checkbox-span {
         margin-right: 7px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-weight: 400;
         font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #757575;
-        & + .modal__checkbox-link {
+        .modal__checkbox-link {
             font-weight: 400;
             font-size: 12px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: var(--brand-color);
+               @media (min-width: 1600px) {
+            font-size: 14px;
+    }
         }
+        @media (min-width: 1600px) {
+            font-size: 14px;
+    }
     }
 }
 
