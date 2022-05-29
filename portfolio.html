@@ -13,11 +13,22 @@
 </head>
 <body>
     <!-- header -->
-     <header class="header header-portfolio">
-        <div class="container flex-center-between">
+    <header class="header header-portfolio">
+        <div class="container">
             <nav class="navigation flex-center-between">
                 <a class="logo" lang="en" href="/">Web<span class="logo__dark-span">Studio</span>
                 </a>
+                <button type="button" class="burger-button">
+                    <svg class="burger-icons">
+                        
+                        <use class="icon-menu-burger" href="./images/symbol-defs.svg#icon-menu_burger"></use>
+                    </svg>
+                </button>
+                <button type="button" class="mobile-menu__close-button">
+                    <svg class="burger-icons">
+                        <use class="icon-close-burger" href="./images/symbol-defs.svg#icon-close_burger"></use>
+                    </svg>
+                </button>
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link" href="index.html">Студия</a></li>
                     <li class="navigation__item"><a class="navigation__link navigation__link--active" href="portfolio.html">Портфолио</a></li>
@@ -42,7 +53,7 @@
     <main>
         <section class="works section">
             <div class="container">
-                <ul class="works__tabs flex-center">
+                <ul class="works__tabs">
                     <li class="works__tab"><button class="works__button" type="button">Все</button></li>
                     <li class="works__tab"><button class="works__button" type="button">Веб-сайты</button></li>
                     <li class="works__tab"><button class="works__button" type="button">Приложения</button></li>
@@ -74,7 +85,7 @@
                             </div>
                         </div>
                         <div class="works__content">
-                            <h3 class="works__title">Постер New Orlean vs Golden Star</h3>
+                            <h3 class="works__title">New Orlean vs Golden Star</h3>
                             <p class="works__type">Дизайн</p>
                         </div>
                         <p class="works__hidden-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -193,15 +204,18 @@
 
 
 
-      <!-- footer -->
- <footer class="footer">
-       <div class="container flex">
+      <!--!-- footer -->
+    <footer class="footer">
+       <div class="container footer__flex">
 
-
+       
         <div class="footer-contacts">
-            <a class="logo" lang="en" href="/">
-                Web<span class="logo__light-span">Studio</span>
-            </a>
+            <div class="footer-contacts__logo-block">
+                <a class="logo" lang="en" href="/">
+                    Web<span class="logo__light-span">Studio</span>
+                </a>
+            </div>
+            
             <address class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</address>
             <a class="footer-contacts__link footer-contacts__link--top"
                 href="mailto:info@example.com">info@example.com</a>
