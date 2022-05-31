@@ -24,8 +24,9 @@
             margin-bottom: 0;
         }
           @media screen and (min-width: 1200px) {
-            width: calc(100% / 4 - 30px);
+            width: calc((100% - 6 * 15px) / 4);
             margin-bottom: 0;
+          
         }
     }
     &__img {

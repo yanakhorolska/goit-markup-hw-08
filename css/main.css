@@ -303,6 +303,23 @@ ol {
   margin-right: 10px;
 }
 
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+}
+
+.mob-menu__close-button {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -466,7 +483,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc(16.6666666667% - 30px);
+    width: calc((100% - 180px) / 6);
   }
 }
 .clients__icon {
@@ -1076,7 +1093,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc(25% - 30px);
+    width: calc((100% - 90px) / 4);
     margin-bottom: 0;
   }
 }

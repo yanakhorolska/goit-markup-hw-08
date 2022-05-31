@@ -37,7 +37,45 @@
     }
 }
 
-
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+}
+.mob-menu__close-button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+// .burger-icons {
+// }
+// .icon-close-burger {
+// }
+// .mob-menu__list {
+// }
+// .mob-menu__item {
+// }
+// .mob-menu__link {
+// }
+// .mob-menu__link--active {
+// }
+// .mob-menu-connection {
+// }
+// .mob-menu-connection__link {
+// }
+// .mob-menu-soc {
+// }
+// .mob-menu-soc__list {
+// }
+// .mob-menu-soc__item {
+// }
+// .mob-menu-soc__link {
+// }
 
 
 
