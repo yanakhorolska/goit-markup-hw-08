@@ -89,6 +89,11 @@
     height: 100vh;
     padding: 48px 40px;
     overflow-y: scroll;
+    transform: scale(1);
+    transition: transform 250ms linear;
+    &.is-hidden {
+        transform: scale(0.9);
+    }
     @media screen and (max-width: 479px) {
                     padding: 20px 20px;
     }
@@ -100,12 +105,13 @@
     }
     &__close-button {
         position: absolute;
-        top: 10px;
-        right: 15px;
+        top: 14px;
+        right: 12px;
         background-color: transparent;
         border: none;
         fill: black;
         &:hover, &:focus {
+            
             fill: var(--brand-color);
         }
     }
