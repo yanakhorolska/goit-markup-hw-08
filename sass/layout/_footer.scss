@@ -32,14 +32,17 @@
         }
     }
     &-contacts {
+        margin-bottom: 60px;
         @media  screen and (min-width: 768px) {
             width: 50%;
+            
         }
         @media  screen and (min-width: 1200px) {
             width: auto;
             margin-right: 70px;
+            margin-bottom: 0;
         }
-        margin-bottom: 60px;
+        
         &__logo-block {
         width: 100%;
         

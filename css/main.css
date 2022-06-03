@@ -419,7 +419,7 @@ ol {
 .mob-menu__close-button {
   position: absolute;
   top: 10px;
-  right: 12px;
+  right: 15px;
   background-color: transparent;
   border: none;
   fill: black;
@@ -851,6 +851,7 @@ ol {
   .footer-contacts {
     width: auto;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 .footer-contacts__logo-block {
@@ -1471,12 +1472,18 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .works__tabs {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__tabs {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
